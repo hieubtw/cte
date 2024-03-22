@@ -1,3 +1,12 @@
+wait(120)
+local args = {
+    [1] = "Axolotl",
+    [2] = "Cat"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pick Starter Pets"):InvokeServer(unpack(args))
+wait(5)
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Changelog: Read"):FireServer()
 local RunService = game:GetService("RunService")RunService:Set3dRenderingEnabled(false)
 getgenv().ScriptSettings = [[{"AutoDigsite":false,"AutoMerchant":true,"TapPerTime":10,"AutoBuyPetSlot":true,"AutoClaimFreeReward":false,"TNTRebirth":true,"TapTime":5,"ReEnableIfHardstuck":300,"AutoBuyUpdrage":true,"FarmingMode":"All","AutoClaimMail":true,"IgnoreUpgrade":{"Magnet":true,"Drops":false,"LessGold":false,"Pet Speed":true,"Pet Damage":false,"LessRainbow":false,"Luck":true,"Ultimates":false,"Walkspeed":true,"Coins":false,"Diamonds":true,"Tap Damage":false},"DigsiteHopp":false,"SpawnObby":false,"MaxMap":99,"RebirthTime":3,"HopIfGoPopUp":false,"AutoRebirth":true,"DigsiteLevel":3,"SelectBest":true,"OpenGiftBag":false,"ListSendMail":[],"HiddenPresent":false,"FarmCoin":true,"DelayHopIfHardstuck":60,"MerchantTF":{"RegularMerchant":false,"GardenMerchant":false,"AdvancedMerchant":false},"AutoTap":true,"DigsiteZone":"Advanced Digsite","Minefield":false,"Atlantis":false,"ClaimRankReward":true,"AutoOpenMap":true,"CauCa":false}]]
 script_key="lOAZHlgWDLiIVOwgJCUBWDDhqpzACRwy";
